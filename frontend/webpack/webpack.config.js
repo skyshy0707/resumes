@@ -15,8 +15,7 @@ module.exports = {
   context: __dirname,
   output: {
     path: dist,
-    //publicPath: '/dist/',
-    //filename: 'build.js'
+    publicPath: '/',
   },
   module: {
     rules: [

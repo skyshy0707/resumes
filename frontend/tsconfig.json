@@ -11,9 +11,10 @@
         "declaration": false,
         "experimentalDecorators": true,
         "strictPropertyInitialization": false,
-
-        //"allowImportingTsExtensions": true,
         "allowJs": true,
+
+        "outDir": "./src/static",
+
 
         // Even files without `import` or `export` are treated as modules.
         // It helps to avoid mysterious errors such as `Cannot redeclare block-scoped variable 'name`.
@@ -24,14 +25,13 @@
         "jsx": "preserve",
         "jsxImportSource": "vue",
         "strict": true,
-        "noImplicitThis": true,
+        "noImplicitThis": false,
         "noUncheckedIndexedAccess": true,
 
         // <https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#verbatimmodulesyntax>
         // Any imports or exports without a type modifier are left around. This is important for `<script setup>`.
         // Anything that uses the type modifier is dropped entirely.
         "verbatimModuleSyntax": false,
-
         "module": "nodenext",
         "target": "es2023",
 
@@ -41,7 +41,8 @@
         "libReplacement": false,
     },
     "include": [
-        "./src/**/*"
+        "./src/components/common/**/*",
+        "./src/components/structures/annotations.ts"
     ],
     "exclude": ["node_modules"]
 }

@@ -6,7 +6,7 @@ A simple base project represented as an user profile with its own objects (resum
 Frontend:
 
 1. cd frontend
-2. docker build -f Dockerfile.frontend
+2. docker build -f Dockerfile.frontend .
 
 **How to run**
 

@@ -147,8 +147,6 @@ export default {
         },
 
         async getUserResumes(offset=0){
-
-            console.log(`in c-headers - Authorization: ${axios.defaults.headers.common["Authorization"]}`)
             let response
             console.log(`${this.$store.state.SERVER_BASE_URL}/resumes`)
             try{
